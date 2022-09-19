@@ -1,1 +1,2 @@
-// Coloque aqui suas actions
+export const passUserInformations = (value) => ({ type: 'PASSUSER', value });
+export const PASSUSER = 'PASSUSER';
