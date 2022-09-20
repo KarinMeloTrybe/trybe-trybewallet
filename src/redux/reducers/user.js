@@ -1,12 +1,13 @@
 import { PASSUSER } from '../actions';
 
 const INITIAL_STATE = {
+  email: '',
 };
 
 function userReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
   case PASSUSER:
-    return action.value;
+    return { ...state, email: action.value };
   default:
     return state;
   }
