@@ -82,6 +82,7 @@ class WalletForm extends Component {
           <button
             onClick={ handleClick }
             type="submit"
+            data-testid="btn-expense"
           >
             { editor ? 'Editar despesas' : ' Adicionar despesa'}
           </button>

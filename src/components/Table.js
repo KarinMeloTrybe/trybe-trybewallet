@@ -35,7 +35,7 @@ class Table extends Component {
               const total = expense.value * expense.exchangeRates[expense.currency].ask;
               return (
                 <tr key={ expense.id }>
-                  <td>{expense.description}</td>
+                  <td data-testid="description-field">{expense.description}</td>
                   <td>{expense.tag}</td>
                   <td>{expense.method}</td>
                   <td>{parseFloat(expense.value).toFixed(2)}</td>
